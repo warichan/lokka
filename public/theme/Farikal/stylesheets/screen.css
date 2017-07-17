@@ -334,7 +334,7 @@ h3 {
   padding: 0 38px 0 15px;
   padding-bottom: 20px;
   letter-spacing: 1px;
-  font-size: 5px;
+  // font-size: 5px;
   white-space: normal;
 }
 /* line 213, ../sass/screen.sass */
