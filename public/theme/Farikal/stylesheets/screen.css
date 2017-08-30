@@ -394,7 +394,7 @@ h3 {
 }
 /* line 252, ../sass/screen.sass */
 .article_contents .body table td {
-  background-color: #747373;
+  background-color: #fff;
   border: #cccccc solid 1px;
   padding: 4px 12px;
   line-height: 1.4;
