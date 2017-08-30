@@ -347,8 +347,12 @@ h3 {
   line-color: #1c1c1c;
 }
 /* line 220, ../sass/screen.sass */
-.article_contents .body ul, .article_contents .body ol {
+.article_contents .body ul{
   list-style: disc;
+  margin: 20px 0;
+}
+.article_contents .body ol {
+  list-style: decimal;
   margin: 20px 0;
 }
 /* line 224, ../sass/screen.sass */
