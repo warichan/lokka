@@ -1,4 +1,4 @@
-- @posts.each do |post| 
+- @posts.each do |post|
   %article
     .date
       %img{:src => "#{@theme.path}/images/date.png"}
@@ -6,17 +6,26 @@
           %p.month= post.created_at.strftime("%m")
           %p.days= post.created_at.strftime("%d")
           %p.year= post.created_at.year
-    .article_contents   
+    .article_contents
       .title
         %h1
           %a{:href => url(post.link)}= post.title
       - unless post.tags.size.zero?
-        = post.tags_to_html            
+        = post.tags_to_html
       .body
         = post.body
         - if logged_in?
           .edit
             %a{:href => url(post.edit_link)}= t('edit')
+  %ins{:class => "adsbygoogle",
+        :style => "display:block; text-align:center;",
+        "data-ad-layout" => "in-article",
+        "data-ad-format" => "fluid",
+        "data-ad-client" => "ca-pub-2255424728688929",
+        "data-ad-slot" => "1125683210",}
+  :javascript
+    (adsbygoogle = window.adsbygoogle || []).push({});
+
 .pn_wrap
   %div
     - if @posts.pager.previous_page
@@ -24,4 +33,4 @@
         %a{:href => "?page=#{@posts.pager.previous_page}"} Newer
     - if @posts.pager.next_page
       %span.next
-        %a{:href => "?page=#{@posts.pager.next_page}"} Older 
+        %a{:href => "?page=#{@posts.pager.next_page}"} Older
