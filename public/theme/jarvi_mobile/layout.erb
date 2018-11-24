@@ -56,7 +56,7 @@
           <dd>
       		  <ul>
 			        <% Tag.all.each do |tag| %>
-				        <li><%= link_to tag.name, url(tag.link) %></li>				
+				        <li><%= link_to tag.name, url(tag.link) %></li>
 			        <% end %>
 		        </ul>
           </dd>
@@ -66,7 +66,7 @@
           <dd>
     		    <ul>
 		          <% Comment.recent.each do |comment| %>
-			          <li><%= link_to truncate(strip_tags(comment.body), :length => 16), (comment.link) %></li>				
+			          <li><%= link_to truncate(strip_tags(comment.body), :length => 16), (comment.link) %></li>
 		          <% end %>
 	          </ul>
           </dd>
